@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВЕКТОР - Студия растяжки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="site-logo">ВЕКТОР</div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link">Главная</a>
+            <a href="#trainers" class="nav-link">Тренеры</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home" class="main-content">
+        <div class="content-wrapper">
+            <div class="left-section">
+                <h1 class="headline">Студия <span class="gradient-text">растяжки</span><br>и здоровой осанки</h1>
+                <p class="description">Индивидуальные и групповые занятия для улучшения гибкости, осанки и самочувствия.<br>Подходит для любого уровня подготовки.</p>
+                <div class="cta-buttons">
+                    <button class="main-cta">
+                        Записаться
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="secondary-cta-main">
+                        Забронировать зал
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers-section">
+        <div class="section-container">
+            <div class="trainers-header">
+                <div class="trainers-text">
+                    <h2 class="section-title">Наши потрясающие тренеры</h2>
+                    <p class="section-subtitle">Познакомьтесь с нашими сертифицированными инструкторами. Наша команда посвящена тому, чтобы направлять вас на пути к здоровью с персональной поддержкой и экспертными советами.</p>
+                </div>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="тренер 1.jpg" alt="Анна Растяжкина">
+                    </div>
+                    <div class="trainer-info">
+                        <h3 class="trainer-name">Анна Растяжкина</h3>
+                        <p class="trainer-description">Преподает растяжку 10 лет. Верит в силу дыхания и движения. Чемпионка по спортивной гимнастике.</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="тренер 2.jpg" alt="Мария Шпагатова">
+                    </div>
+                    <div class="trainer-info">
+                        <h3 class="trainer-name">Мария Шпагатова</h3>
+                        <p class="trainer-description">Сертифицированный инструктор. Фокусируется на выравнивании и осознанности.</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="тренер 3.jpg" alt="Елена Связкина">
+                    </div>
+                    <div class="trainer-info">
+                        <h3 class="trainer-name">Елена Связкина</h3>
+                        <p class="trainer-description">Эксперт по динамической растяжке. Создает плавные и энергичные последовательности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts" class="footer">
+        <div class="footer-bottom">
+            <div class="footer-watermark">ВЕКТОР</div>
+            <div class="section-container">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <h2 class="footer-brand">ВЕКТОР</h2>
+                            <p class="footer-tagline">Гибкость тела, свобода движения</p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Telegram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.13-.31-1.09-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-nav-columns">
+                            <div class="footer-nav-column">
+                                <h3 class="footer-nav-heading">Навигация</h3>
+                                <a href="#home" class="footer-link">Главная</a>
+                                <a href="#trainers" class="footer-link">Тренеры</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom-bar">
+                    <p class="footer-copyright-text">©2025 ВЕКТОР. Все права защищены.</p>
+                    <div class="footer-policies">
+                        <a href="#" class="footer-policy-link">Политика конфиденциальности</a>
+                        <a href="#" class="footer-policy-link">Условия использования</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Параллакс эффект для фона (только для десктопа)
+        window.addEventListener('scroll', function() {
+            // Отключаем параллакс на мобильных устройствах
+            if (window.innerWidth <= 768) {
+                return;
+            }
+            
+            const scrolled = window.pageYOffset;
+            const mainContent = document.querySelector('.main-content');
+            const speed = 0.3;
+            const yPos = 30 - (scrolled * speed);
+            if (mainContent) {
+                mainContent.style.backgroundPosition = 'center ' + yPos + '%';
+            }
+        });
+
+        // Плавная прокрутка для всех якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href === '') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Мобильное меню
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navMenu.classList.toggle('open');
+                menuToggle.classList.toggle('active');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('open');
+                    menuToggle.classList.remove('active');
+                });
+            });
+
+            // Закрытие меню при клике вне его
+            document.addEventListener('click', function(e) {
+                if (navMenu.classList.contains('open') && 
+                    !navMenu.contains(e.target) && 
+                    !menuToggle.contains(e.target)) {
+                    navMenu.classList.remove('open');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
