@@ -11,25 +11,32 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="site-logo">ВЕКТОР</div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="header-top-mobile">
+            <div class="site-logo-mobile">ВЕКТОР</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
         <nav class="nav-menu" id="navMenu">
             <a href="#home" class="nav-link">Главная</a>
             <a href="#trainers" class="nav-link">Тренеры</a>
+            <a href="#pricing" class="nav-link">Прайс</a>
+            <a href="#rental" class="nav-link">Аренда зала</a>
+            <a href="#contacts" class="nav-link">Контакты</a>
         </nav>
+        <button class="header-call-button">Позвонить</button>
     </header>
 
     <!-- Main Content -->
     <main id="home" class="main-content">
         <div class="content-wrapper">
             <div class="left-section">
-                <h1 class="headline">Студия <span class="gradient-text">растяжки</span><br>и здоровой осанки</h1>
-                <p class="description">Индивидуальные и групповые занятия для улучшения гибкости, осанки и самочувствия.<br>Подходит для любого уровня подготовки.</p>
+                <h1 class="headline">Фитнес студия всестороннего развития,<br>здоровой осанки и психологического<br>благополучия</h1>
+                <p class="description">Развивай себя везде и во всем.</p>
                 <div class="cta-buttons">
                     <button class="main-cta">
                         Записаться
@@ -57,30 +64,247 @@
             <div class="trainers-grid">
                 <div class="trainer-card">
                     <div class="trainer-image">
-                        <img src="тренер 1.jpg" alt="Анна Растяжкина">
+                        <img src="тренер 1.jpg" alt="Оксана Хлусова">
                     </div>
                     <div class="trainer-info">
-                        <h3 class="trainer-name">Анна Растяжкина</h3>
-                        <p class="trainer-description">Преподает растяжку 10 лет. Верит в силу дыхания и движения. Чемпионка по спортивной гимнастике.</p>
+                        <h3 class="trainer-name">Оксана Хлусова</h3>
+                        <button class="trainer-button" data-trainer="oksana"><span>Подробнее</span></button>
                     </div>
                 </div>
                 <div class="trainer-card">
                     <div class="trainer-image">
-                        <img src="тренер 2.jpg" alt="Мария Шпагатова">
+                        <img src="тренер 2.jpg" alt="Алина Комарова">
                     </div>
                     <div class="trainer-info">
-                        <h3 class="trainer-name">Мария Шпагатова</h3>
-                        <p class="trainer-description">Сертифицированный инструктор. Фокусируется на выравнивании и осознанности.</p>
+                        <h3 class="trainer-name">Алина Комарова</h3>
+                        <button class="trainer-button" data-trainer="alina"><span>Подробнее</span></button>
                     </div>
                 </div>
                 <div class="trainer-card">
                     <div class="trainer-image">
-                        <img src="тренер 3.jpg" alt="Елена Связкина">
+                        <img src="тренер 3.jpg" alt="Дарья Маркова">
                     </div>
                     <div class="trainer-info">
-                        <h3 class="trainer-name">Елена Связкина</h3>
-                        <p class="trainer-description">Эксперт по динамической растяжке. Создает плавные и энергичные последовательности.</p>
+                        <h3 class="trainer-name">Дарья Маркова</h3>
+                        <button class="trainer-button" data-trainer="darya"><span>Подробнее</span></button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-container">
+            <div class="pricing-header">
+                <h2 class="section-title">Прайс (групповые занятия)</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-title">Пробное занятие</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">500</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="pricing-details">
+                        <p class="pricing-description">Идеально для знакомства со студией</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-title">Разовое</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">900</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="pricing-details">
+                        <p class="pricing-description">Одно занятие</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-title">4 занятия</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">3200</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="pricing-details">
+                        <p class="pricing-description">Срок действия: 1 месяц</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-title">8 занятий</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">5600</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="pricing-details">
+                        <p class="pricing-description">Срок действия: 1 месяц</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-title">12 занятий</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">7800</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="pricing-details">
+                        <p class="pricing-description">Срок действия: 1 месяц</p>
+                        <p class="pricing-note">При раннем продлении: 7500 ₽</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-title">24 занятия</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">15000</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="pricing-details">
+                        <p class="pricing-description">Срок действия: 2 месяца</p>
+                        <p class="pricing-note">При раннем продлении: 14500 ₽</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-title">36 занятий</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">20500</span>
+                        <span class="price-currency">₽</span>
+                    </div>
+                    <div class="pricing-details">
+                        <p class="pricing-description">Срок действия: 3 месяца</p>
+                        <p class="pricing-note">При раннем продлении: 19500 ₽</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-signup-block">
+                    <h3 class="pricing-signup-title">Готова развиваться?</h3>
+                    <button class="pricing-action-button pricing-action-button-filled">
+                        <span>да, готова!</span>
+                    </button>
+                </div>
+            </div>
+            <div class="pricing-footnote">
+                <p>❗️Ранее продление-это покупка абонемента до его окончания. Абонементы распространяются на все направления.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Section -->
+    <section id="rental" class="rental-section">
+        <div class="section-container">
+            <div class="rental-header">
+                <h2 class="section-title">Стоимость аренды зала</h2>
+            </div>
+            <div class="rental-grid">
+                <div class="rental-card">
+                    <div class="rental-card-header">
+                        <h3 class="rental-title">Персональное</h3>
+                        <p class="rental-subtitle">2 человека</p>
+                    </div>
+                    <div class="rental-time-slots">
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 7:00 - 17:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">500</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 17:00 - 19:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">700</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 19:00 - 22:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">700</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="rental-button"><span>Арендовать зал</span></button>
+                </div>
+                
+                <div class="rental-card">
+                    <div class="rental-card-header">
+                        <h3 class="rental-title">Групповое</h3>
+                        <p class="rental-subtitle">3-8 человек</p>
+                    </div>
+                    <div class="rental-time-slots">
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 7:00 - 17:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">800</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 17:00 - 19:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">1000</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 19:00 - 22:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">1300</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="rental-button"><span>Арендовать зал</span></button>
+                </div>
+                
+                <div class="rental-card">
+                    <div class="rental-card-header">
+                        <h3 class="rental-title">Групповое</h3>
+                        <p class="rental-subtitle">9 и более человек</p>
+                    </div>
+                    <div class="rental-time-slots">
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 7:00 - 17:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">1000</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 17:00 - 19:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">1300</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                        <div class="rental-time-slot">
+                            <div class="time-range">С 19:00 - 22:00</div>
+                            <div class="rental-price">
+                                <span class="price-amount">1500</span>
+                                <span class="price-currency">₽/ч</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="rental-button"><span>Арендовать зал</span></button>
                 </div>
             </div>
         </div>
@@ -105,11 +329,15 @@
                                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </a>
-                            <a href="#" class="social-icon" aria-label="Telegram">
+                            <a href="https://t.me/+O8CcowrdDTQyNzAy" class="social-icon" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.13-.31-1.09-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/>
                                 </svg>
                             </a>
+                        </div>
+                        <div class="footer-contacts">
+                            <p class="footer-contact-item">г. Геленджик, ул. Рыбникова 3</p>
+                            <p class="footer-contact-item">Тел. <a href="tel:+79230006841" class="footer-contact-link">8-923-000-68-41</a></p>
                         </div>
                     </div>
                     <div class="footer-right">
@@ -118,6 +346,8 @@
                                 <h3 class="footer-nav-heading">Навигация</h3>
                                 <a href="#home" class="footer-link">Главная</a>
                                 <a href="#trainers" class="footer-link">Тренеры</a>
+                                <a href="#pricing" class="footer-link">Прайс</a>
+                                <a href="#rental" class="footer-link">Аренда зала</a>
                             </div>
                         </div>
                     </div>
@@ -132,6 +362,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- Trainer Modal -->
+    <div id="trainerModal" class="trainer-modal">
+        <div class="trainer-modal-content">
+            <span class="trainer-modal-close">&times;</span>
+            <div class="trainer-modal-body">
+                <div class="trainer-modal-image">
+                    <img id="trainerModalImg" src="" alt="">
+                </div>
+                <div class="trainer-modal-info">
+                    <h2 id="trainerModalName"></h2>
+                    <div id="trainerModalDescription"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Параллакс эффект для фона (только для десктопа)
@@ -174,33 +420,162 @@
 
         // Мобильное меню
         const menuToggle = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navMenu');
+        const header = document.getElementById('header');
         const navLinks = document.querySelectorAll('.nav-link');
 
-        if (menuToggle && navMenu) {
+        if (menuToggle && header) {
             menuToggle.addEventListener('click', function(e) {
                 e.stopPropagation();
-                navMenu.classList.toggle('open');
+                header.classList.toggle('open');
                 menuToggle.classList.toggle('active');
             });
 
             navLinks.forEach(link => {
                 link.addEventListener('click', function() {
-                    navMenu.classList.remove('open');
+                    header.classList.remove('open');
                     menuToggle.classList.remove('active');
                 });
             });
 
             // Закрытие меню при клике вне его
             document.addEventListener('click', function(e) {
-                if (navMenu.classList.contains('open') && 
-                    !navMenu.contains(e.target) && 
+                if (header.classList.contains('open') && 
+                    !header.contains(e.target) && 
                     !menuToggle.contains(e.target)) {
-                    navMenu.classList.remove('open');
+                    header.classList.remove('open');
                     menuToggle.classList.remove('active');
                 }
             });
         }
+
+        // Trainer Modal
+        const trainerModal = document.getElementById('trainerModal');
+        const trainerButtons = document.querySelectorAll('.trainer-button[data-trainer]');
+        const modalClose = document.querySelector('.trainer-modal-close');
+        const modalImg = document.getElementById('trainerModalImg');
+        const modalName = document.getElementById('trainerModalName');
+        const modalDescription = document.getElementById('trainerModalDescription');
+
+        const trainerData = {
+            oksana: {
+                name: 'Оксана Хлусова',
+                image: 'тренер 1.jpg',
+                description: `
+                    <p><strong>-Фитнес-тренер по программе "Технология и методика проведения индивидуальных фитнес-программ;</strong></p>
+                    <p><strong>-Дипломированный и практикующий преподаватель хатха-йоги, сертификат Yoga Alliance;</strong></p>
+                    <p><strong>- Интегрированный нутрициолог (в т.ч. нутрициология и БАДы для детей от 3-18 лет);</strong></p>
+                    <p><strong>-Участник международных форумов и круглых столов в области фитнеса</strong> (анатомическое моделирование и коррекция веса; мфр; постуральный фитнес и коррекция веса (здоровье сосудов: эндотелиальная дисфункция; диалоги о железе; астенический синдром; основы диетотерапии при различных заболеваниях; чистокровная биохимия, очистительные сооружения; чистоплотные гормоны; коррекция избыточного веса в условиях индустрии красоты и фитнеса.</p>
+                    <p><strong>Хатха-йога.</strong></p>
+                    <p>Гармоничное сочетание силовой нагрузки, осознанности и концентрации внимания. Практики включают в себя выполнение асан с замками (бандхи) и пранаямами (дыхательными техниками).</p>
+                    <p>В практике особое внимание уделяю травмобезопасности и отстройкам асан.</p>
+                    <p>Хатха-йога подойдет как для начинающих, так и для продолжающих.</p>
+                    <p>На практике Вы получите гарантированную трансформацию на коврике и в жизни.</p>
+                    <button class="trainer-signup-button">Записаться</button>
+                `
+            },
+            alina: {
+                name: 'Алина Комарова',
+                image: 'тренер 2.jpg',
+                description: `
+                    <p>Меня зовут Алина Комарова, я тренер по танцам студии «Вектор» по направлениям High Heels и Choreo.</p>
+                    <p>Я в танцах с самого детства и не представляю без них свою жизнь, потому что для меня танец – это один из самых глубоких и честных способов контакта с собой.</p>
+                    <p>Через движение мы можем соприкоснуться как со своей женственной, ранимой и уязвимой частью, так и с дерзкой, страстной и сексуальной. Этот путь я прохожу сама и хорошо его понимаю.</p>
+                    <p>На занятиях мы не только разучиваем хореографию, но и уделяем внимание своим внутренним ощущениям в движении.</p>
+                    <p>Я приглашаю вас на занятия, где танец даёт возможность наслаждения собой и становится источником вдохновения, а изменения, происходящие в зале, естественным образом переносятся в повседневную жизнь.</p>
+                    <p><strong>Про направления</strong></p>
+                    <p><strong>High Heels</strong> - танцевальное направление, занятия которым поспособствует вашему раскрепощению, раскрытию собственной сексуальности и повышению уверенности в себе. На классах мы танцуем женственные, чувственные и страстные хореографии, постепенно перенося это состояние и ощущение себя в повседневную жизнь.</p>
+                    <p><strong>Choreo</strong> - танцевальное направление, которое не привязано к одному конкретному стилю. Хореографии содержат в себе микс разных направлений, и помогают прочувствовать и прожить через танец новые, ещё неизведанные грани себя.</p>
+                    <button class="trainer-signup-button">Записаться</button>
+                `
+            },
+            darya: {
+                name: 'Дарья Маркова',
+                image: 'тренер 3.jpg',
+                description: `
+                    <p><strong>Дарья Маркова</strong> - основатель студии «Вектор». Тренер универсал.</p>
+                    <p><strong>Тренерский стаж:</strong> более 15 лет</p>
+                    <p><strong>Образование:</strong> 2 красных диплома</p>
+                    <p>Высшее педагогическое образование. Физкультурно-спортивная деятельность. Магистр Института Физической культуры и спорта.</p>
+                    <p><strong>Дополнительное образование:</strong></p>
+                    <ol>
+                        <li>Обучение «Секреты эффективных и безопасных тренировок». г. Санкт-Петербург</li>
+                        <li>Обучение «Особенности тренировочных нагрузок у клиентов с ограничениями здоровья». г. Санкт-Петербург</li>
+                        <li>Обучение «Тренировка ягодиц». г. Новосибирск</li>
+                        <li>Обучение «Стретчинг в групповых программах и персональном тренинге». г. Краснодар</li>
+                        <li>Обучение на ФИТНЕС НУТРИЦИОЛОГА. г. Краснодар</li>
+                        <li>Курс «Йога в гамаках»</li>
+                        <li>Обучение «Фитнес реабилитация коленного и тазобедренного суставов». г. Краснодар</li>
+                        <li>Онлайн обучение «Эндокринолог в фитнесе»</li>
+                        <li>Посетила «Международную фитнес конвенцию BlAST by ITS» г. Краснодар</li>
+                        <li>Обучение «3D АНАТОМИЯ ДЛЯ ТРЕНЕРОВ»</li>
+                        <li>Обучение «Миофасциальный релиз»</li>
+                        <li>Онлайн конференция по йоге</li>
+                        <li>Прошла обучение по программе «Профессиональная подготовка эксперта по рациональному питанию и коррекции веса» в объеме 144 часа. Теперь действительный членом сообщества Консультационного Диетологического Центра «Диетологов России»</li>
+                        <li>Онлайн курс «Тренер в ТОПе»</li>
+                        <li>Мастер класс «Аэройога в потоке»</li>
+                        <li>Онлайн обучение «Профессионал по биомеханике»</li>
+                        <li>Курс «Беременность и фитнес: ЗА и ПРОТИВ»</li>
+                        <li>Обучение «Углубленный инструкторский курс подготовки преподавателей Аэройоги»</li>
+                        <li>Обучение «Сколиоз: виды, причины, лечение» г. Санкт-Петербург</li>
+                        <li>Обучение «Биомеханика в тренажёрном зале» г. Краснодар</li>
+                        <li>Посетила мастер класс Максима Батырева г. Краснодар</li>
+                        <li>Обучение «ТБС и ЯГОДИЦЫ» г. Москва</li>
+                        <li>Онлайн обучение по Нутрициологии</li>
+                        <li>Прошла несколько онлайн курсов по бизнесу и мышлению</li>
+                        <li>Курс «Аэройога для беременных»</li>
+                        <li>Обучение «Биомеханика и функциональная анатомия силовых упражнений». г. Геленджик</li>
+                        <li>«Стретчинг и коррекция осанки» г. Москва</li>
+                    </ol>
+                    <div class="trainer-about-section">
+                        <p><strong>О себе:</strong></p>
+                        <p><strong>Спортивный Разряд:</strong> МСМК по Пауэрлифтингу, ЭЛИТА по жиму штанги лежа, КМС по тяжелой атлетике</p>
+                        <p>Чемпионка, рекордсменка Европы, России, Евразии, Мира.</p>
+                        <p>Воспитала 7 Мастеров спорта и Мастера спорта международного класса по пауэрлифтингу, жиму лежа и становой тяге</p>
+                        <p>Совмещаю сферы, которые идеально друг друга дополняют, это тренажёрный зал и растяжка. За всестороннее гармоничное развитие!</p>
+                        <p>Мне нравится работать с подопечными, наблюдать, как они меняются, как достигают успеха, видеть их счастливые глаза, когда желания исполняются и чувствовать эту неповторимую энергию, когда ВСЁ СТАНОВИТСЯ ВОЗМОЖНЫМ 🙏🏻</p>
+                        <button class="trainer-signup-button">Записаться</button>
+                    </div>
+                `
+            }
+        };
+
+        trainerButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const trainerId = this.getAttribute('data-trainer');
+                const trainer = trainerData[trainerId];
+                
+                if (trainer) {
+                    modalImg.src = trainer.image;
+                    modalImg.alt = trainer.name;
+                    modalName.textContent = trainer.name;
+                    modalDescription.innerHTML = trainer.description;
+                    
+                    trainerModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        function closeModal() {
+            trainerModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (modalClose) {
+            modalClose.addEventListener('click', closeModal);
+        }
+
+        trainerModal.addEventListener('click', function(e) {
+            if (e.target === trainerModal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && trainerModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
